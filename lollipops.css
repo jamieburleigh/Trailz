@@ -1,0 +1,6 @@
+ul.lollipops {}
+ul.lollipops li.crumb {display:inline-block;}
+ul.lollipops li.crumb a   {margin:0 5px}
+ul.lollipops li.crumb:first-child a {margin-left:0;}
+ul.lollipops li.crumb.active-crumb {}
+ul.lollipops span.seperator {color:#000;}
