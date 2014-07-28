@@ -94,7 +94,7 @@ function get_lollypops() {
     $parent_id = $post->post_parent;
 
     if (is_page() && !$parent_id) {
-        $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . get_permalink($page->ID) . '" itemprop="url"><span itemprop="title">' . $page_title;
+        $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . get_permalink($page->ID) . '" itemprop="url"><span itemprop="title">' . $page_title . '</span></a></li>';
     } elseif ( is_page() && $parent_id ) { 
         $breadcrumbs = array();
         $parent_id = $post->post_parent;
@@ -105,7 +105,7 @@ function get_lollypops() {
         }
         $breadcrumbs = array_reverse($breadcrumbs);
         foreach($breadcrumbs as $crumb) $trail .= $crumb;
-        $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . get_permalink($page->ID) . '" itemprop="url"><span itemprop="title">' . $page_title;
+        $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . get_permalink($page->ID) . '" itemprop="url"><span itemprop="title">' . $page_title . '</span></a></li>';
     }
 	$trail .= '
 </ul>
