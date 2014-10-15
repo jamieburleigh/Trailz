@@ -93,8 +93,10 @@ function get_lollypops() {
 	$page_title = get_the_title($post->ID);
     $parent_id = $post->post_parent;
 
-    if (is_page() && !$parent_id) {
+    if (is_page()  && !$parent_id) {
         $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="' . get_permalink($page->ID) . '" itemprop="url"><span itemprop="title">' . $page_title . '</span></a></li>';
+    } elseif (is_archive()  && !$parent_id) {
+        $trail .= '<li class="crumb active-crumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/" itemprop="url"><span itemprop="title">' . post_type_archive_title('',false) . '</span></a></li>';
     } elseif ( is_page() && $parent_id ) { 
         $breadcrumbs = array();
         $parent_id = $post->post_parent;
