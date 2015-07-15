@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Lollipop Trail
+ * Plugin Name: Trailz
  * Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
  * Description: A customised breadcrumbs plugin.
  * Version: .1
