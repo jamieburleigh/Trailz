@@ -67,7 +67,7 @@ echo '<input name="Submit" type="submit" value="<?php esc_attr_e(\'Save Changes\
 
 add_action( 'admin_menu', 'my_plugin_menu' );
 
-function get_lollypops() {
+function get_trailz() {
 
 	global $post;
 
