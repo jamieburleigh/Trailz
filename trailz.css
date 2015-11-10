@@ -1,9 +1,10 @@
 /* An example of how to style the crumbs by default. This Stylesheet used to be pulled in via Wordpress hooks, but who wants a seperate CSS file for breadcrumbs? */
 
-ul.lollipops {}
-ul.lollipops li.crumb {display:inline-block;}
-ul.lollipops li.crumb   {}
-ul.lollipops li.crumb span {margin:0 5px}
-ul.lollipops li.crumb:first-child span {margin-left:0;}
-ul.lollipops li.crumb.active-crumb {}
-ul.lollipops span.seperator {color:#000;}
+ul.trailz {}
+ul.trailz li.crumb {display:inline-block;}
+ul.trailz li.crumb   {}
+ul.trailz li.crumb span {margin:0 5px}
+ul.trailz li.crumb:first-child span {margin-left:0;}
+ul.trailz li.crumb.active-crumb {}
+ul.trailz span.seperator {color:#000;}
+
